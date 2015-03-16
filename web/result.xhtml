@@ -1,0 +1,33 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://xmlns.jcp.org/jsf/html">
+    <h:head>
+        <title>Facelet Title</title>
+    </h:head>
+    <h:body>
+        <h2>Resultado</h2>
+        <h:panelGrid columns="2">
+            <h:outputText value="Base Datos : "/>
+            <h:outputText value="#{encuestaBean.response1}"/>
+           
+            <h:outputText value="Sistemas Operativo: "/>
+            <h:outputText value="#{encuestaBean.sistemaOperativoInString}" />
+            <h:outputText value="Mejor Portatil : "/>
+            <h:outputText value="#{encuestaBean.portatil}" />
+            <h:outputText value="Calificacion: "/>
+            <h:outputText value="#{encuestaBean.califacion}" />
+            
+             <h:outputText value="Mejor Referencia: "/>
+            <h:outputText value="#{encuestaBean.response2}" />
+            <h:outputText value="Calificacion Mysql: "/>
+            <h:outputText value="#{encuestaBean.mysqlresponse}" />
+            <h:outputText value="Calificacion Postgres: "/>
+            <h:outputText value="#{encuestaBean.postgresresponse}" />
+             <h:outputText value="Calificacion Oracle: "/>
+            <h:outputText value="#{encuestaBean.oracleresponse}" />
+        </h:panelGrid>
+        
+    </h:body>
+</html>
+
